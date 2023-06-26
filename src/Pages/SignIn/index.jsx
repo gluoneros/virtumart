@@ -1,14 +1,10 @@
 import Layout from '../../Components/Layout'
 
-function SignIn() {  
-
+function SignIn() {
   return (
-    
     <Layout>
-        SignIn
-       
-     </Layout>      
-    
+      SignIn
+    </Layout>
   )
 }
 
