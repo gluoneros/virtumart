@@ -5,8 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        corben: ['Corben', 'cursive'],
+        display: ['Playfair Display', 'serif'],
+      },
+    },
   },
   plugins: [],
 }
-
