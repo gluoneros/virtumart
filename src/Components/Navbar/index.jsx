@@ -12,7 +12,7 @@ const Navbar = () => {
       <ul className='flex items-center gap-3'>
         <li className='font-semibold text-lg'>
           <NavLink to='/'>
-            Shopi
+            Virtumart
           </NavLink>
         </li>
         <li>
