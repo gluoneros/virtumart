@@ -1,0 +1,39 @@
+language: JavaScript, CSS, HTML, react
+os: osx
+
+git:
+  depth: 3
+
+branches: 
+  except:
+  -legacy
+  -experimental
+
+branches:
+  only:
+  -main
+  -master
+  -stable
+
+before_install:
+  -react
+
+inatall:
+  -npm install @heroicons/react
+
+script:
+  -npm install @heroicons/react
+  -npm install react-router-dom
+  -npm create vite@latest
+  -npm install -D tailwindcss postcss autoprefixer
+  -npx tailwindcss init -p
+
+before_script:
+-
+
+after_script:
+  -yarn clean
+
+cache:
+  directories:
+    -node_modules
