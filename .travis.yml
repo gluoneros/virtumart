@@ -34,9 +34,7 @@ before_script:
 after_script:
   -yarn clean
 
-cache:
-  directories:
-    -node_modules
+
 
 deploy:
   provider: pages
